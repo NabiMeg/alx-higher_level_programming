@@ -9,7 +9,7 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *p
+	listint_t *p2;
 	listint_t *prev;
 
 	p2 = list;
@@ -28,7 +28,7 @@ int check_cycle(listint_t *list)
 				p2 = prev;
 				while (p2->next != list && p2->next != prev)
 				{
-					p2 = p2->next;
+					p2 = p2->next
 				}
 				if (p2->next == list)
 					break;
